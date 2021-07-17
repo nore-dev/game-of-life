@@ -26,8 +26,11 @@ int main()
         Vector2 mousePos = GetMousePosition();
 
         if (IsKeyPressed(KEY_L)) next = !next;
+ 
+        // Clear
         if (IsKeyPressed(KEY_C)) memset(cells, 0, sizeof cells);
 
+        // Fps +/-
         if (IsKeyDown(KEY_A)) SetTargetFPS(GetFPS() - 1);
         if (IsKeyDown(KEY_D)) SetTargetFPS(GetFPS() + 1);
         
